@@ -34,7 +34,7 @@ class PlgLogmanZooActivityCategory extends ComLogmanModelEntityActivity
         $config->append(
             array(
                 'subtype' => array('object' => true, 'objectName' => 'Zoo'),
-                'url'     => $url
+                'url'     => array('admin' => $url)
             )
         );
 

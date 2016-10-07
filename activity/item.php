@@ -35,7 +35,7 @@ class PlgLogmanZooActivityItem extends ComLogmanModelEntityActivity
             array(
                 'subtype' => array('object' => true, 'objectName' => 'Zoo'),
                 'type'    => array('object' => true, 'objectName' => $this->getMetadata()->type),
-                'url'     => $url
+                'url'     => array('admin' => $url)
             )
         );
 

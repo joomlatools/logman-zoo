@@ -53,7 +53,7 @@ class PlgLogmanZooActivityComment extends ComLogmanModelEntityActivity
             $url = sprintf('option=com_zoo&controller=comment&changeapp=%s&filter-item=%s&filter-state=%s', $application, $metadata->item->id, $state);
         }
 
-        $config->append(array('url' => $url));
+        $config->append(array('url' => array('admin' => $url)));
 
         parent::_objectConfig($config);
     }
@@ -77,7 +77,7 @@ class PlgLogmanZooActivityComment extends ComLogmanModelEntityActivity
                 'find'       => 'target',
                 'subtype'    => array('object' => true, 'objectName' => 'Zoo'),
                 'objectName' => $name,
-                'url'        => $url,
+                'url'        => array('admin' => $url),
             )
         );
     }
