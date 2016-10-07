@@ -1,6 +1,6 @@
 {
   "name": "joomlatools/plg_logman_zoo",
-  "type": "joomla-extension",
+  "type": "joomlatools-composer",
   "license": "GPLv3",
   "description": "Handles logging of YOOtheme Zoo events",
   "keywords": [
@@ -20,6 +20,6 @@
     }
   ],
   "require": {
-    "nooku/installer": "*"
+    "joomlatools/composer": "*"
   }
 }
