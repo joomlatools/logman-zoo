@@ -89,7 +89,7 @@ class PlgLogmanZoo extends ComLogmanPluginJoomla
     {
         $tasks = array('publish', 'unpublish', 'spam', 'approve', 'unapprove');
 
-        // Bypass save events that originate on publish and unpublish actions.
+        // Bypass save events that originate on some actions.
         if (!in_array($this->getObject('request')->getData()->task, $tasks)) {
             parent::onContentAfterSave($context, $content, $isNew);
         }
