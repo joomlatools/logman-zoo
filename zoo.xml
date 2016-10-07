@@ -22,4 +22,35 @@
     <config>
         <fields name="params" />
     </config>
+
+    <resources>
+        <resource name="item">
+            <actions>
+                <action>add</action>
+                <action>edit</action>
+                <action>delete</action>
+                <action>publish</action>
+                <action>unpublish</action>
+            </actions>
+        </resource>
+        <resource name="category">
+            <actions>
+                <action>add</action>
+                <action>edit</action>
+                <action>delete</action>
+                <action>publish</action>
+                <action>unpublish</action>
+            </actions>
+        </resource>
+        <resource name="comment">
+            <actions>
+                <action>add</action>
+                <action>edit</action>
+                <action>delete</action>
+                <action>publish</action>
+                <action>unpublish</action>
+                <action>archive</action>
+            </actions>
+        </resource>
+    </resources>
 </extension>
