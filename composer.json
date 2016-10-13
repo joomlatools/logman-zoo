@@ -1,5 +1,5 @@
 {
-  "name": "joomlatools/plg_logman_zoo",
+  "name": "joomlatools/logman-zoo",
   "type": "joomlatools-composer",
   "license": "GPLv3",
   "description": "Handles logging of YOOtheme Zoo events",
