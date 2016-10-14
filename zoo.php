@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     LOGman
- * @copyright   Copyright (C) 2011 - 2015 Timble CVBA. (http://www.timble.net)
+ * @copyright   Copyright (C) 2011 - 2016 Timble CVBA. (http://www.timble.net)
  * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
  * @link        http://www.joomlatools.com
  */
@@ -89,7 +89,7 @@ class PlgLogmanZoo extends ComLogmanPluginJoomla
     {
         $tasks = array('publish', 'unpublish', 'spam', 'approve', 'unapprove');
 
-        // Bypass save events that originate on publish and unpublish actions.
+        // Bypass save events that originate on some actions.
         if (!in_array($this->getObject('request')->getData()->task, $tasks)) {
             parent::onContentAfterSave($context, $content, $isNew);
         }

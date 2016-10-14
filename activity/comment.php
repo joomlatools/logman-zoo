@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     LOGman
- * @copyright   Copyright (C) 2011 - 2015 Timble CVBA. (http://www.timble.net)
+ * @copyright   Copyright (C) 2011 - 2016 Timble CVBA. (http://www.timble.net)
  * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
  * @link        http://www.joomlatools.com
  */
@@ -53,7 +53,7 @@ class PlgLogmanZooActivityComment extends ComLogmanModelEntityActivity
             $url = sprintf('option=com_zoo&controller=comment&changeapp=%s&filter-item=%s&filter-state=%s', $application, $metadata->item->id, $state);
         }
 
-        $config->append(array('url' => $url));
+        $config->append(array('url' => array('admin' => $url)));
 
         parent::_objectConfig($config);
     }
@@ -77,7 +77,7 @@ class PlgLogmanZooActivityComment extends ComLogmanModelEntityActivity
                 'find'       => 'target',
                 'subtype'    => array('object' => true, 'objectName' => 'Zoo'),
                 'objectName' => $name,
-                'url'        => $url,
+                'url'        => array('admin' => $url),
             )
         );
     }

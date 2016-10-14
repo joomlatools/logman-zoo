@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     LOGman
- * @copyright   Copyright (C) 2011 - 2015 Timble CVBA. (http://www.timble.net)
+ * @copyright   Copyright (C) 2011 - 2016 Timble CVBA. (http://www.timble.net)
  * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
  * @link        http://www.joomlatools.com
  */
@@ -35,7 +35,7 @@ class PlgLogmanZooActivityItem extends ComLogmanModelEntityActivity
             array(
                 'subtype' => array('object' => true, 'objectName' => 'Zoo'),
                 'type'    => array('object' => true, 'objectName' => $this->getMetadata()->type),
-                'url'     => $url
+                'url'     => array('admin' => $url)
             )
         );
 
